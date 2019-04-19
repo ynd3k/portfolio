@@ -1,0 +1,71 @@
+$theme-color: #008cdb;
+$bg-color: beige;
+$border: 2px solid $theme-color;
+$space-xs: 5px;
+$space-s: 10px;
+$space-xm: 15px;
+$space-m: 20px;
+$space-xl: 25px;
+$space-l: 30px;
+$space-2l: 35px;
+$space-3l: 40px;
+
+$breakpoints:(
+    'xs': 'screen and (max-width: 400px)',
+    'sm': 'screen and (min-width: 401px) and (max-width: 630px)',
+    'md': 'screen and (min-width: 631px) and (max-width: 880px)',
+    'xl': 'screen and (max-width: 600px)',
+    'l' : 'screen and (max-width: 910px)',
+    'lg': 'screen and (min-width: 881px) and (max-width: 1200px)',
+) !default;
+@mixin mq_xs($breakpoint: xs) {
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}
+@mixin mq_sm($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)}{
+      @content;
+  }
+}
+@mixin mq_md($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)}{
+      @content;
+  }
+}
+@mixin mq_xl($breakpoint: xl) {
+  @media #{map-get($breakpoints, $breakpoint)}{
+      @content;
+  }
+}
+@mixin mq_l($breakpoint: l) {
+  @media #{map-get($breakpoints, $breakpoint)}{
+      @content;
+  }
+}
+@mixin mq_lg($breakpoint: lg) {
+    @media #{map-get($breakpoints, $breakpoint)}{
+        @content;
+    }
+}
+
+a{
+  color: $theme-color;
+  cursor: pointer;
+  text-decoration: none;
+}
+body, #wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $theme-color;
+  background: $bg-color;
+  line-height: 1.7;
+}
+.btn{
+  display: inline-block;
+  color: $bg-color;
+  background: #008cdb;
+  padding: $space-m;
+  border-radius: 5px;
+}

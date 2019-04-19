@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="wrapper">
+    <MyBase></MyBase>
+    <Header class=""></Header>
+    <Profile></Profile>
+    <Skill></Skill>
+    <Work></Work>
+    <Footer></Footer>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import 'normalize.css';
+import MyBase from './components/MyBase';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import Skill from './components/Skill';
+import Work from './components/Work';
+import Footer from './components/Footer';
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    'MyBase': MyBase,
+    'Header': Header,
+    'Profile': Profile,
+    'Skill': Skill,
+    'Work': Work,
+    'Footer': Footer
+  },
+  data(){
+    return{
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
+
+
+
+
+
