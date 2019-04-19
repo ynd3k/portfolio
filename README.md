@@ -1,29 +1,11 @@
-# my-project
+# 概要
+制作物をまとめたポートフォリオサイトです。
+# 機能
+レスポンシブ対応です。
+# 技術
+HTML/CSS/JavaScript/Vue.js
+# 公開
+Firebase
 
-## Project setup
-```
-yarn install
-```
+[https://nanshi99.firebaseapp.com/](https://nanshi99.firebaseapp.com/)
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
